@@ -1,0 +1,21 @@
+﻿@model ObraDeArte;
+
+
+<form action="/ObraDeArte/Modificar" method="post">
+	<input type="hidden" name="Id" value="@Model.Id" />
+	<div>
+		Nombre de obra
+	<input type="text" name="Nombre" value="@Model.Nombre" />
+	</div>
+
+	<div>
+		Año de creación
+	<input type="text" name="AnioCreacion" value="@Model.AnioCreacion" />
+	</div>
+
+	<div>
+		<input type="submit" value="Modificar Obra" />
+	</div>
+
+
+</form>

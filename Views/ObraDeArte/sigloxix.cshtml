@@ -1,0 +1,23 @@
+﻿@model List<ObraDeArte>;
+
+
+	<h1>Obras de Arte Siglo xix</h1>
+<table class="table">
+	<thead>
+		<tr>
+			<th>Nombre</th>
+			<th>Anio</th>
+			
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var obra in Model)
+		{
+		<tr>
+			<td>@obra.Nombre</td>
+			<td>@obra.AnioCreacion</td>
+		</tr>
+		}
+		
+	</tbody>
+</table>
